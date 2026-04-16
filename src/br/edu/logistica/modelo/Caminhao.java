@@ -8,5 +8,7 @@ public class Caminhao extends Veiculo{
         this.eixos = eixos;
     }
 
+    public double calcularAutonomia() {
 
+    }
 }

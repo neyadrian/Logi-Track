@@ -13,6 +13,5 @@ public abstract class Veiculo {
         DISPONIVEL, EM_MANUTENCAO, EM_VIAGEM;
     }
 
-
     public abstract double calcularAutonimia();
 }
