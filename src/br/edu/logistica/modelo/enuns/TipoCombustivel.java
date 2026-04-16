@@ -1,4 +1,4 @@
-package br.edu.logistica.modelo;
+package br.edu.logistica.modelo.enuns;
 
 public enum TipoCombustivel {
     DIESEL(5.5),
