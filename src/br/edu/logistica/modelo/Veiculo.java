@@ -1,5 +1,7 @@
 package br.edu.logistica.modelo;
 
+import br.edu.logistica.modelo.enuns.StatusVeiculo;
+
 public abstract class Veiculo {
     private String placa;
     private double capacidadeCarga;
@@ -9,10 +11,6 @@ public abstract class Veiculo {
         this.placa = placa;
         this.capacidadeCarga = capacidadeCarga;
         this.statusVeiculo = StatusVeiculo.DISPONIVEL;
-    }
-
-    public enum StatusVeiculo {
-        DISPONIVEL, EM_MANUTENCAO, EM_VIAGEM;
     }
 
     public abstract double calcularAutonomia();
