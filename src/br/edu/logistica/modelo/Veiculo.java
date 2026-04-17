@@ -29,27 +29,27 @@ public abstract class Veiculo {
         System.out.println("==============================");
     }
 
-    public String getPlaca() {
+    public final String getPlaca() {
         return placa;
     }
 
-    public void setPlaca(String placa) {
+    public final void setPlaca(String placa) {
         this.placa = placa;
     }
 
-    public double getCapacidadeCarga() {
+    public final double getCapacidadeCarga() {
         return capacidadeCarga;
     }
 
-    public void setCapacidadeCarga(double capacidadeCarga) {
+    public final void setCapacidadeCarga(double capacidadeCarga) {
         this.capacidadeCarga = capacidadeCarga;
     }
 
-    public StatusVeiculo getStatusVeiculo() {
+    public final StatusVeiculo getStatusVeiculo() {
         return statusVeiculo;
     }
 
-    public void setStatusVeiculo(StatusVeiculo statusVeiculo) {
+    public final void setStatusVeiculo(StatusVeiculo statusVeiculo) {
         this.statusVeiculo = statusVeiculo;
     }
 
