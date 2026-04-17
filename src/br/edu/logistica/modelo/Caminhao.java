@@ -5,6 +5,7 @@ import br.edu.logistica.modelo.enuns.TipoCombustivel;
 public class Caminhao extends Veiculo implements Monitoravel {
     private int eixos;
 
+    private static final double KM_POR_LITRO_BASE = 4.5;
     private static final int CAPACIDADE_TANQUE = 400;
 
     public Caminhao(String placa, double capacidadeCarga, TipoCombustivel combustivel, int eixos) {
