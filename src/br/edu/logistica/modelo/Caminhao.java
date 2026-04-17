@@ -2,7 +2,7 @@ package br.edu.logistica.modelo;
 
 import br.edu.logistica.modelo.enuns.TipoCombustivel;
 
-public class Caminhao extends Veiculo implements Monitoriavel{
+public class Caminhao extends Veiculo implements Monitoravel {
     private int eixos;
 
     private static final int CAPACIDADE_TANQUE = 400;

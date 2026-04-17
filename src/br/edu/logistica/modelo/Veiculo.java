@@ -18,12 +18,12 @@ public abstract class Veiculo {
 
     public abstract double calcularAutonomia();
 
-    public void exibirAutonomia() {
+    public void exibirInformacoes() {
         System.out.println("=== Informações do Veículo ===");
         System.out.println(" Placa: " + placa);
         System.out.println(" Capacidade de Carga: " + capacidadeCarga + " ton");
-        System.out.printf (" Combustível    : %-24s│%n", tipoCombustivel);
-        System.out.printf (" Fator (km/un.) : %-24.1f│%n", tipoCombustivel.getFator());
+        System.out.printf (" Combustível    : %-24s \n", tipoCombustivel);
+        System.out.printf (" Fator (km/un.) : %-24.1f \n", tipoCombustivel.getFator());
         System.out.println(" Status: " + statusVeiculo);
         System.out.println(" Autonomia estimada: " + calcularAutonomia() + " km");
         System.out.println("==============================");
@@ -59,7 +59,7 @@ public abstract class Veiculo {
 
     @Override
     public String toString() {
-        return String.format("Veiculo[placa=%s, status=%s, autonomia=%.1f km]",
+        return String.format("Veiculo[placa= %s, status= %s, autonomia= %.1f km]",
                 placa, statusVeiculo, calcularAutonomia());
     }
 }

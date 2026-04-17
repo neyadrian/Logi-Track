@@ -1,6 +1,6 @@
 package br.edu.logistica.modelo;
 
-public interface Monitoriavel {
+public interface Monitoravel {
 
     void enviarCoordenadas();
     String obterLocalizacaoAtual();
