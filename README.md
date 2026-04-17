@@ -27,22 +27,24 @@ O projeto foi construído com foco na aplicação prática de conceitos fundamen
 ---
 
 ## 🏗️ Estrutura do Projeto
+```
 src/
 └── br.edu.logistica
-├── aplicacao
-│ └── Main.java
-│
-├── modelo
-│ ├── Veiculo.java
-│ ├── Caminhao.java
-│ ├── Van.java
-│ ├── Monitoravel.java
-│ └── enums
-│ ├── StatusVeiculo.java
-│ └── TipoCombustivel.java
-│
-└── servico
-└── GerenciadorFrota.java
+    ├── aplicacao
+    │   └── Main.java
+    │
+    ├── modelo
+    │   ├── Veiculo.java
+    │   ├── Caminhao.java
+    │   ├── Van.java
+    │   ├── Monitoravel.java
+    │   └── enums
+    │       ├── StatusVeiculo.java
+    │       └── TipoCombustivel.java
+    │
+    └── servico
+        └── GerenciadorFrota.java
+```
 
 ---
 
