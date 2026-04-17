@@ -13,5 +13,21 @@ public class Van extends Veiculo {
         this.possuiRefrigeracao = possuiRefrigeracao;
     }
 
+    @Override
+    public double calcularAutonomia() {
+        double fator = getTipoCombustivel().getFator();
+        double multiplicador;
 
+        if (possuiRefrigeracao) {
+            multiplicador = 1.0 - PENALIDADE_REFRIGERACAO;
+        } else {
+            multiplicador = 1.0;
+        }
+
+        return CAPACIDADE_TANQUE * fator * multiplicador;
+    }
+
+    public final boolean isPossuiRefrigeracao() {
+        return possuiRefrigeracao;
+    }
 }
