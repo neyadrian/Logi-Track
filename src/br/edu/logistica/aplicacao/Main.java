@@ -69,7 +69,7 @@ public class Main {
         }
 
         System.out.println("Total de veículos cadastrados: " + gerenciador.getTotalVeiculos());
-        System.out.println("\n[Sistema encerrado com sucesso]");
+        System.out.println("\n Sistema encerrado!");
 
     }
 }

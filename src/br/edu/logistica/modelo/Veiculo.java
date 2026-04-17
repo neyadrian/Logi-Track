@@ -59,7 +59,6 @@ public abstract class Veiculo {
 
     @Override
     public String toString() {
-        return String.format("Veiculo[placa= %s, status= %s, autonomia= %.1f km]",
-                placa, statusVeiculo, calcularAutonomia());
+        return String.format("Veiculo[placa= %s, status= %s, autonomia= %.1f km]", placa, statusVeiculo, calcularAutonomia());
     }
 }
