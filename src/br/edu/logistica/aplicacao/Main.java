@@ -7,7 +7,7 @@ import br.edu.logistica.modelo.enuns.StatusVeiculo;
 import br.edu.logistica.modelo.enuns.TipoCombustivel;
 import br.edu.logistica.servico.GerenciadorFrota;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
 
         System.out.println("============================================");
