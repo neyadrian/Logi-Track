@@ -29,5 +29,6 @@ public class GerenciadorFrota {
     }
 
     public RelatorioServico getRelatorios() { return relatorios; }
+
     public RastreamentoServico getRastreamento() { return rastreamento; }
 }
