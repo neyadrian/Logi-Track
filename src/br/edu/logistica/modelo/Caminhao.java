@@ -2,6 +2,9 @@ package br.edu.logistica.modelo;
 
 import br.edu.logistica.modelo.enuns.TipoCombustivel;
 
+/** * Classe que representa um Caminhão. *
+ * PADRÕES SOLID APLICADOS: * - SOLID (SRP - Single Responsibility Principle): Responsável APENAS por *   calcular autonomia de caminhões com suas penalidades específicas. * - Implementa interface Monitoravel para rastreamento via satélite. */
+
 public class Caminhao extends Veiculo implements Monitoravel {
     private int eixos;
 
@@ -13,6 +16,7 @@ public class Caminhao extends Veiculo implements Monitoravel {
         this.eixos = eixos;
     }
 
+    /**     * SRP: Calcula autonomia de forma específica para caminhões.     * Considera penalidades por eixos e carga.     */
     @Override
     public double calcularAutonomia() {
         double fator = getTipoCombustivel().getFator();

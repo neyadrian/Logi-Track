@@ -2,6 +2,9 @@ package br.edu.logistica.modelo;
 
 import br.edu.logistica.modelo.enuns.TipoCombustivel;
 
+/** * Classe que representa uma Van. *
+ * PADRÕES SOLID APLICADOS: * - SOLID (SRP - Single Responsibility Principle): Responsável APENAS por *   calcular autonomia de vans com suas penalidades específicas. */
+
 public class Van extends Veiculo {
     private boolean possuiRefrigeracao;
 
@@ -13,6 +16,7 @@ public class Van extends Veiculo {
         this.possuiRefrigeracao = possuiRefrigeracao;
     }
 
+    /**     * SRP: Calcula autonomia de forma específica para vans.     * Considera penalidade por refrigeração.     */
     @Override
     public double calcularAutonomia() {
         double fator = getTipoCombustivel().getFator();

@@ -3,6 +3,9 @@ package br.edu.logistica.modelo;
 import br.edu.logistica.modelo.enuns.StatusVeiculo;
 import br.edu.logistica.modelo.enuns.TipoCombustivel;
 
+/** * Classe abstrata que define o contrato para todos os veículos. *
+ * PADRÕES SOLID APLICADOS: * - SOLID (DIP - Dependency Inversion Principle): Classes dependem da abstração Veiculo, *   não de implementações concretas (Caminhao, Van). */
+
 public abstract class Veiculo {
     private String placa;
     private double capacidadeCarga;

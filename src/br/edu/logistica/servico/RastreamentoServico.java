@@ -4,6 +4,10 @@ import br.edu.logistica.modelo.Monitoravel;
 
 import java.util.List;
 
+/** * Serviço de Rastreamento - Responsável por GPS e localização. *
+ * PADRÕES SOLID APLICADOS: * - SOLID (SRP - Single Responsibility):  *   Responsável APENAS por rastreamento de veículos. *
+ * - SOLID (DIP - Dependency Inversion):  *   Depende da interface Monitoravel (abstração), *   não de implementações concretas (Caminhao). */
+
 public class RastreamentoServico {
      private final RepositorioFrota repositorio;
 
@@ -11,6 +15,7 @@ public class RastreamentoServico {
         this.repositorio = repositorio;
     }
 
+    /**     * SRP: Apenas lista veículos monitoráveis.     * DIP: Usa interface Monitoravel, não implementações específicas.     */
     public void listarVeiculosMonitoraveis() {
         System.out.println("\n========= VEÍCULOS COM RASTREAMENTO =========");
         List<Monitoravel> monitore = repositorio.obterTodos().stream()

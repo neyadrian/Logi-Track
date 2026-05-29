@@ -7,6 +7,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/** * Repositório Central da Frota - Padrão Repository. *
+ * PADRÕES SOLID APLICADOS: * - SOLID (SRP - Single Responsibility Principle): *   Responsável APENAS por persistência/armazenamento de dados da frota. *   Centraliza toda lógica de CRUD (Create, Read, Update, Delete). */
+
 public class RepositorioFrota {
 
     private final List<Veiculo> frota;
